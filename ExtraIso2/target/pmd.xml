@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2020-06-20T19:35:40.391">
+<file name="C:\Users\javier\Documents\ExtraIso2\src\main\java\com\esi\uclm\iso2\ExtraIso2\App.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Best Practices" package="com.esi.uclm.iso2.ExtraIso2" class="App" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Scanner'
+</violation>
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="46" rule="ImportFromSamePackage" ruleset="Error Prone" package="com.esi.uclm.iso2.ExtraIso2" class="App" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
+No need to import a type that lives in the same package
+</violation>
+<violation beginline="54" endline="54" begincolumn="19" endcolumn="81" rule="UselessParentheses" ruleset="Code Style" package="com.esi.uclm.iso2.ExtraIso2" class="App" method="calcularCosteViaje" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="55" endline="55" begincolumn="26" endcolumn="70" rule="UselessParentheses" ruleset="Code Style" package="com.esi.uclm.iso2.ExtraIso2" class="App" method="calcularCosteViaje" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="C:\Users\javier\Documents\ExtraIso2\src\main\java\com\esi\uclm\iso2\ExtraIso2\FranjaEnum.java">
+<violation beginline="4" endline="4" begincolumn="49" endcolumn="49" rule="EmptyStatementNotInLoop" ruleset="Error Prone" package="com.esi.uclm.iso2.ExtraIso2" class="FranjaEnum" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#emptystatementnotinloop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+</pmd>
