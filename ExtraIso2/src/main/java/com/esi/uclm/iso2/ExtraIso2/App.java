@@ -13,31 +13,16 @@ import com.esi.uclm.iso2.ExtraIso2.Excepcion.NumeroPasajerosException;
  */
 public class App 
 {
+	static Date fecha = new Date(120,6, 27);
     public static void main( String[] args ) throws FechaPasadaException, NumeroPasajerosException
     {
     	
-    	Scanner sc = new Scanner(System.in);
-        // entrada de una cadena
-    	System.out.println("introduce el año de la fecha (los años se cuentan a partir del 1900, por ejemplo,"
-    			+ "si quieres meter el año 2020 tienes que poner 120, si quieres meter 2021 el 121)");
-        int año = sc.nextInt();
-        System.out.println("introduce el mes de la fecha (siendo enero 0 ...junio 5...");
-        int mes = sc.nextInt();
-        System.out.println("introduce el dia de la fecha (siendo el dia, el dia que quieres +1, si quieres 17 pon 18 )");
-        int dia = sc.nextInt();
-    	System.out.println("introduce el numero de pasageros");
-    	int pasajeros = sc.nextInt();
-    	sc.close();
-        System.out.println( "Hello World!" );
-        @SuppressWarnings("deprecation")
-		Date fecha = new Date(año, mes, dia);
-        Date fechahora = new Date();
-        System.out.println("de ahora"+fechahora.getYear());
-        System.out.println(fechahora);
-        System.out.println("la introducida"+fecha.getYear());
-        System.out.println(fecha);
+    	
+      
+       // Date fecha = new Date(120, 6, 25);
         //calcularCosteViaje(fecha,FranjaEnum.NOCTURNO,20);
-        System.out.println( calcularCosteViaje(fecha,FranjaEnum.NOCTURNO,pasajeros));
+        //calcularCosteViaje(fecha,FranjaEnum.MANANA,Pasajeros)
+         calcularCosteViaje(fecha,FranjaEnum.MANANA,16);
     }
     public static double calcularCosteViaje(Date fecha, FranjaEnum franjaHoraria, int numeroPasajeros)
     		throws FechaPasadaException, NumeroPasajerosException {
@@ -79,9 +64,10 @@ public class App
     	}
     	//extra por día de la semana
     	int diaSemana = getDiaSemana(fecha);
-    	if(diaSemana == 6 || diaSemana == 7) {
+    	if(diaSemana == 5 || diaSemana == 6) {
     		costeIndividual += 50.75;
     	}
+    	System.out.println(costeIndividual * numeroPasajeros);
     	return costeIndividual * numeroPasajeros;
     }
 	@SuppressWarnings("deprecation")

@@ -5,25 +5,26 @@ import java.util.Date;
 public class tarificador {
 
 
-	private static int tarifaBaseActual;
+	public static int tarifaBaseActual;
 
 	
 	public tarificador(int tarifaBaseActual) {
-		tarifaBaseActual=tarifaBaseActual;
+		this.tarifaBaseActual=tarifaBaseActual;
 	}
 
 	public static int getTarifaBaseActual(Date fecha) {
-		if(fecha.getMonth()<8 && fecha.getMonth()>4 ) {
+		int tarifaBaseActual;
+		if(fecha.getMonth()<8 && fecha.getMonth()>4 ) /*meses de verano*/{
 			tarifaBaseActual= 1000;
-		}else {
+		}else {//meses de invierno
 			tarifaBaseActual=700;
 		}
 		return tarifaBaseActual;
 	}
 
-	public void setTarifaBaseActual(int tarifaBaseActual) {
-		this.tarifaBaseActual = tarifaBaseActual;
-	}
+//	public void setTarifaBaseActual(int tarifaBaseActual) {
+//		this.tarifaBaseActual = tarifaBaseActual;
+//	}
 	
 	
 
