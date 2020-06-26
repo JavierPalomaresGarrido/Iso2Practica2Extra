@@ -1,6 +1,8 @@
 package com.esi.uclm.iso2.ExtraIso2;
 
 import java.util.Date;
+import java.util.Scanner;
+
 import com.esi.uclm.iso2.ExtraIso2.Excepcion.*/*.FechaPasadaException*/;
 //import com.esi.uclm.iso2.ExtraIso2.Excepcion.NumeroPasajerosException;
 
@@ -21,6 +23,7 @@ public class App {
 	 */
     public static void main(String[] args) 
     		throws FechaPasadaException, NumeroPasajerosException {
+    	 
          calcularCosteViaje(fecha, FranjaEnum.MANANA, 61);
     }       
     /**

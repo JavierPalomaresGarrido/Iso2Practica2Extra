@@ -86,7 +86,7 @@ public class AppTest
         //assertTrue(precioTotal==30612.75 );
     }
 
-    //probamos el codigo con valores : fecha: 27/6/120    franjaHoraria: MANANA   numero de pasajeros: 5
+    //probamos el codigo con valores : fecha: 26/6/120    franjaHoraria: MANANA   numero de pasajeros: 5
     @Test
     public void testMesVeranoFestivo(){
     	double precioTotal=0;
@@ -249,10 +249,10 @@ public class AppTest
     	assertTrue(App.calcularCosteViaje(App.fecha, FranjaEnum.MANANA, 50)==53558.75);
     }
     
-    
+   
     // test tarificador meses invierno para el caso en el que la decision es false, la primera condicion es true y la segunda false
     @Test
-    public void testTarificadorMesesInviernoMenor4Branch(){
+    public void testTarificadorMesesInviernoBranch(){
     	double precioTotalInd=0;
     	Date fecha = new Date(121, 2, 27);
      precioTotalInd=Tarificador.getTarifaBaseActual(fecha);
