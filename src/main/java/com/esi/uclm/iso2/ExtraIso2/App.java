@@ -1,9 +1,10 @@
 package com.esi.uclm.iso2.ExtraIso2;
 
 import java.util.Date;
-import java.util.Scanner;
 
-import com.esi.uclm.iso2.ExtraIso2.Excepcion.*/*.FechaPasadaException*/;
+
+import com.esi.uclm.iso2.ExtraIso2.Excepcion.*;
+/*.FechaPasadaException*/
 //import com.esi.uclm.iso2.ExtraIso2.Excepcion.NumeroPasajerosException;
 
 /**
@@ -69,12 +70,12 @@ public class App {
     	//descuento por número de pasajeros y franja horaria
     	if (numeroPasajeros > 50 && !franjaHoraria.equals(FranjaEnum.MANANA)) {
     		costeIndividual *= 0.75; // -25% descuento
-    	} else if (numeroPasajeros > 50 &&
-    			franjaHoraria.equals(FranjaEnum.MANANA)
+    	} else if (numeroPasajeros > 50
+    				&& franjaHoraria.equals(FranjaEnum.MANANA)
     			|| numeroPasajeros <= 50 && numeroPasajeros > 10) {
     		costeIndividual *= 0.85; // -15% descuento
-    	} else if (numeroPasajeros > 2 && numeroPasajeros <= 10 &&
-    			franjaHoraria.equals(FranjaEnum.TARDE)) {
+    	} else if (numeroPasajeros > 2 && numeroPasajeros <= 10 
+    			&& franjaHoraria.equals(FranjaEnum.TARDE)) {
     		costeIndividual *= 0.90; // -10% descuento
     	} else if (numeroPasajeros > 2 && numeroPasajeros <= 10) {
     		costeIndividual *= 0.95; // -5% descuento
